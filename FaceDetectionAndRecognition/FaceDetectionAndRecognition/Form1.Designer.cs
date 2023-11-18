@@ -36,6 +36,7 @@
             this.recognizeBtn = new System.Windows.Forms.Button();
             this.personNameTxtBox = new System.Windows.Forms.TextBox();
             this.detectedPic = new System.Windows.Forms.PictureBox();
+            this.saveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.capturePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detectedPic)).BeginInit();
             this.SuspendLayout();
@@ -70,25 +71,27 @@
             // 
             // addPersonBtn
             // 
-            this.addPersonBtn.Location = new System.Drawing.Point(648, 272);
+            this.addPersonBtn.Location = new System.Drawing.Point(648, 89);
             this.addPersonBtn.Name = "addPersonBtn";
             this.addPersonBtn.Size = new System.Drawing.Size(140, 32);
             this.addPersonBtn.TabIndex = 1;
             this.addPersonBtn.Text = "3. Add Person";
             this.addPersonBtn.UseVisualStyleBackColor = true;
+            this.addPersonBtn.Click += new System.EventHandler(this.addPersonBtn_Click);
             // 
             // trainBtn
             // 
-            this.trainBtn.Location = new System.Drawing.Point(648, 310);
+            this.trainBtn.Location = new System.Drawing.Point(648, 338);
             this.trainBtn.Name = "trainBtn";
             this.trainBtn.Size = new System.Drawing.Size(140, 32);
             this.trainBtn.TabIndex = 1;
             this.trainBtn.Text = "4. Train Images";
             this.trainBtn.UseVisualStyleBackColor = true;
+            this.trainBtn.Click += new System.EventHandler(this.trainBtn_Click);
             // 
             // recognizeBtn
             // 
-            this.recognizeBtn.Location = new System.Drawing.Point(648, 348);
+            this.recognizeBtn.Location = new System.Drawing.Point(648, 376);
             this.recognizeBtn.Name = "recognizeBtn";
             this.recognizeBtn.Size = new System.Drawing.Size(140, 32);
             this.recognizeBtn.TabIndex = 1;
@@ -97,18 +100,28 @@
             // 
             // personNameTxtBox
             // 
-            this.personNameTxtBox.Location = new System.Drawing.Point(648, 246);
+            this.personNameTxtBox.Location = new System.Drawing.Point(648, 262);
             this.personNameTxtBox.Name = "personNameTxtBox";
             this.personNameTxtBox.Size = new System.Drawing.Size(140, 20);
             this.personNameTxtBox.TabIndex = 2;
             // 
             // detectedPic
             // 
-            this.detectedPic.Location = new System.Drawing.Point(648, 100);
+            this.detectedPic.Location = new System.Drawing.Point(648, 127);
             this.detectedPic.Name = "detectedPic";
             this.detectedPic.Size = new System.Drawing.Size(140, 129);
             this.detectedPic.TabIndex = 3;
             this.detectedPic.TabStop = false;
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.Location = new System.Drawing.Point(648, 288);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(140, 32);
+            this.saveBtn.TabIndex = 1;
+            this.saveBtn.Text = "SAVE";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // Form1
             // 
@@ -118,6 +131,7 @@
             this.Controls.Add(this.detectedPic);
             this.Controls.Add(this.personNameTxtBox);
             this.Controls.Add(this.recognizeBtn);
+            this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.trainBtn);
             this.Controls.Add(this.addPersonBtn);
             this.Controls.Add(this.detectBtn);
@@ -142,6 +156,7 @@
         private System.Windows.Forms.Button recognizeBtn;
         private System.Windows.Forms.TextBox personNameTxtBox;
         private System.Windows.Forms.PictureBox detectedPic;
+        private System.Windows.Forms.Button saveBtn;
     }
 }
 
