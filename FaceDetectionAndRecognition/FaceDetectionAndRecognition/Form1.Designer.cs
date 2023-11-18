@@ -28,45 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cameraBox = new PictureBox();
-            startButton = new Button();
-            ((System.ComponentModel.ISupportInitialize)cameraBox).BeginInit();
+            picCapture = new PictureBox();
+            caputureBtn = new Button();
+            detectFacesBtn = new Button();
+            personNameTxtBox = new TextBox();
+            addPersonBtn = new Button();
+            trainBtn = new Button();
+            recognizeBtn = new Button();
+            ditectedPic = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picCapture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ditectedPic).BeginInit();
             SuspendLayout();
             // 
-            // cameraBox
+            // picCapture
             // 
-            cameraBox.Location = new Point(12, 22);
-            cameraBox.Name = "cameraBox";
-            cameraBox.Size = new Size(408, 404);
-            cameraBox.TabIndex = 0;
-            cameraBox.TabStop = false;
+            picCapture.Location = new Point(12, 12);
+            picCapture.Name = "picCapture";
+            picCapture.Size = new Size(749, 492);
+            picCapture.TabIndex = 0;
+            picCapture.TabStop = false;
             // 
-            // startButton
+            // caputureBtn
             // 
-            startButton.Location = new Point(560, 78);
-            startButton.Name = "startButton";
-            startButton.Size = new Size(105, 43);
-            startButton.TabIndex = 1;
-            startButton.Text = "Start Detection and Recognition";
-            startButton.UseVisualStyleBackColor = true;
-            startButton.Click += startButton_Click;
+            caputureBtn.Location = new Point(805, 12);
+            caputureBtn.Name = "caputureBtn";
+            caputureBtn.Size = new Size(166, 31);
+            caputureBtn.TabIndex = 1;
+            caputureBtn.Text = "1. Capture";
+            caputureBtn.UseVisualStyleBackColor = true;
+            // 
+            // detectFacesBtn
+            // 
+            detectFacesBtn.Location = new Point(805, 49);
+            detectFacesBtn.Name = "detectFacesBtn";
+            detectFacesBtn.Size = new Size(166, 31);
+            detectFacesBtn.TabIndex = 1;
+            detectFacesBtn.Text = "2. Detect Faces";
+            detectFacesBtn.UseVisualStyleBackColor = true;
+            // 
+            // personNameTxtBox
+            // 
+            personNameTxtBox.Location = new Point(805, 262);
+            personNameTxtBox.Name = "personNameTxtBox";
+            personNameTxtBox.Size = new Size(166, 23);
+            personNameTxtBox.TabIndex = 2;
+            // 
+            // addPersonBtn
+            // 
+            addPersonBtn.Location = new Point(805, 306);
+            addPersonBtn.Name = "addPersonBtn";
+            addPersonBtn.Size = new Size(166, 31);
+            addPersonBtn.TabIndex = 1;
+            addPersonBtn.Text = "3. Add Person";
+            addPersonBtn.UseVisualStyleBackColor = true;
+            // 
+            // trainBtn
+            // 
+            trainBtn.Location = new Point(805, 343);
+            trainBtn.Name = "trainBtn";
+            trainBtn.Size = new Size(166, 31);
+            trainBtn.TabIndex = 1;
+            trainBtn.Text = "4. Train Images";
+            trainBtn.UseVisualStyleBackColor = true;
+            // 
+            // recognizeBtn
+            // 
+            recognizeBtn.Location = new Point(805, 394);
+            recognizeBtn.Name = "recognizeBtn";
+            recognizeBtn.Size = new Size(166, 31);
+            recognizeBtn.TabIndex = 1;
+            recognizeBtn.Text = "5. Recognize Person";
+            recognizeBtn.UseVisualStyleBackColor = true;
+            // 
+            // ditectedPic
+            // 
+            ditectedPic.Location = new Point(805, 86);
+            ditectedPic.Name = "ditectedPic";
+            ditectedPic.Size = new Size(166, 170);
+            ditectedPic.TabIndex = 3;
+            ditectedPic.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(startButton);
-            Controls.Add(cameraBox);
+            ClientSize = new Size(983, 516);
+            Controls.Add(ditectedPic);
+            Controls.Add(personNameTxtBox);
+            Controls.Add(recognizeBtn);
+            Controls.Add(trainBtn);
+            Controls.Add(addPersonBtn);
+            Controls.Add(detectFacesBtn);
+            Controls.Add(caputureBtn);
+            Controls.Add(picCapture);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)cameraBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picCapture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ditectedPic).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox cameraBox;
-        private Button startButton;
+        private PictureBox picCapture;
+        private Button caputureBtn;
+        private Button detectFacesBtn;
+        private TextBox personNameTxtBox;
+        private Button addPersonBtn;
+        private Button trainBtn;
+        private Button recognizeBtn;
+        private PictureBox ditectedPic;
     }
 }

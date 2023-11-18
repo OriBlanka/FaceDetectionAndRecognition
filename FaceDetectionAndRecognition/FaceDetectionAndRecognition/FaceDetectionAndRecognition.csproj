@@ -6,30 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Emgu.CV">
-      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Emgu.CV.GPU">
-      <HintPath>bin\Debug\Emgu.CV.GPU.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Emgu.CV.ML">
-      <HintPath>bin\Debug\Emgu.CV.ML.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Emgu.CV.UI">
-      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Emgu.Util">
-      <HintPath>bin\Debug\Emgu.Util.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <PackageReference Include="EmguCV" Version="3.1.0.1" />
   </ItemGroup>
 
 </Project>
